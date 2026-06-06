@@ -1832,6 +1832,7 @@ button, input, select, textarea { font-family: inherit; }
   .hero-sub { font-size: 0.9rem; }
   .hero-cta { flex-direction: column; gap: 12px; }
   .hero-cta .btn { width: 100%; justify-content: center; }
+  .btn { padding: 14px 28px; font-size: 0.9rem; }
   .hero-orb-1 { width: 220px; height: 220px; }
   .hero-orb-2 { width: 140px; height: 140px; }
 
@@ -1925,6 +1926,7 @@ button, input, select, textarea { font-family: inherit; }
   .hero-h1 { font-size: clamp(1.8rem, 10vw, 2.6rem); }
   .hero-tag { font-size: 0.62rem; letter-spacing: 0.18em; }
   .hero-tag::before, .hero-tag::after { width: 20px; }
+  .btn { padding: 12px 24px; font-size: 0.85rem; letter-spacing: 0.05em; }
 
   /* Stats */
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
