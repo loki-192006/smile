@@ -1835,6 +1835,12 @@ button, input, select, textarea { font-family: inherit; }
   .btn { padding: 14px 28px; font-size: 0.9rem; }
   .hero-orb-1 { width: 220px; height: 220px; }
   .hero-orb-2 { width: 140px; height: 140px; }
+  
+  /* Make videos fit screen completely on mobile */
+  #introVideo, #heroBg { 
+    object-fit: contain; 
+    background: #000; 
+  }
 
   /* Sections spacing */
   #about, #services, #packages, #gallery, #why,
