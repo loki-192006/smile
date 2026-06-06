@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Smile Beauty Salon – Premium Bridal Makeup, Hair Styling & Beauty Care in Thiruchendur, Tamil Nadu. 5.0 Google Rating. 500+ Happy Clients. Book your bridal appointment today." />
+  <meta name="keywords" content="bridal makeup Thiruchendur, beauty salon Thiruchendur, hair styling Tamil Nadu, HD makeup, airbrush makeup, bridal studio" />
+  <meta name="author" content="Smile Beauty Salon" />
+  <meta property="og:title" content="Smile Beauty Salon – Luxury Bridal Studio, Thiruchendur" />
+  <meta property="og:description" content="Premium Bridal Makeup & Beauty Care in Thiruchendur. Book Now!" />
+  <meta property="og:type" content="website" />
+  <title>Smile Beauty Salon | Luxury Bridal Studio – Thiruchendur</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     INTRO VIDEO SCREEN
+═══════════════════════════════════════════════════════ -->
+<div id="introScreen" aria-label="Intro video" role="dialog">
+  <video id="introVideo" autoplay muted playsinline preload="auto" aria-hidden="true">
+    <source src="images/video.mp4" type="video/mp4" />
+  </video>
+  <div class="intro-overlay"></div>
+  <div class="intro-bar intro-bar-top"></div>
+  <div class="intro-bar intro-bar-bottom"></div>
+  <button class="intro-skip" id="introSkip" aria-label="Skip intro">Skip &rsaquo;</button>
+  <div class="intro-progress-wrap">
+    <div class="intro-progress-bar" id="introProgress"></div>
+  </div>
+</div>
+
+<!-- Curtain transition panels -->
+<div class="curtain" id="curtainLeft"></div>
+<div class="curtain" id="curtainRight"></div>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo" aria-label="Smile Beauty Salon Home">
+      <img src="images/logo.png" alt="Smile Beauty Salon Logo" class="nav-logo-img" />
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#appointment" class="btn btn-gold nav-cta">Book Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <a href="#hero" class="mobile-link">Home</a>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#services" class="mobile-link">Services</a>
+  <a href="#gallery" class="mobile-link">Gallery</a>
+  <a href="#packages" class="mobile-link">Packages</a>
+  <a href="#testimonials" class="mobile-link">Reviews</a>
+  <a href="#appointment" class="mobile-link">Book Appointment</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO SECTION
+═══════════════════════════════════════════════════════ -->
+<section id="hero" aria-label="Hero section">
+  <!-- Hero Video Background -->
+  <video
+    id="heroBg"
+    class="hero-bg"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    aria-hidden="true"
+  >
+    <source src="images/video.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-tag"><i class="ph-light ph-sparkle"></i> Smile Beauty Salon <i class="ph-light ph-sparkle"></i></div>
+      <h1 class="hero-h1">
+        Where Beauty
+        <em>Meets Elegance</em>
+      </h1>
+      <p class="hero-sub">Professional Bridal Makeup, Hair Styling &amp; Beauty Care Services in Thiruchendur – Crafted with love for your most precious moments.</p>
+      <div class="hero-cta">
+        <a href="#appointment" class="btn btn-gold" id="heroBookBtn">
+          <span><i class="ph-light ph-sparkle"></i></span> Book Appointment
+        </a>
+        <a href="https://wa.me/917418030622?text=Hello%20Smile%20Beauty%20Salon%2C%20I%20would%20like%20to%20book%20an%20appointment." class="btn btn-whatsapp" id="heroWaBtn" target="_blank" rel="noopener">
+          <span><i class="ph-light ph-whatsapp-logo"></i></span> WhatsApp Now
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rating Badge -->
+  <div class="hero-badge" aria-label="5 star rated salon">
+    <div class="hero-badge-stars">★★★★★</div>
+    <div class="hero-badge-num">5.0</div>
+    <div class="hero-badge-label">Google Rating</div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator" aria-hidden="true">
+    <div class="scroll-mouse"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     ABOUT SECTION
+═══════════════════════════════════════════════════════ -->
+<section id="about" aria-labelledby="aboutTitle">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal-left">
+        <div class="about-img-accent"></div>
+        <img src="images/about.png" alt="Smile Beauty Salon interior – luxury bridal studio" class="about-img-main" loading="lazy" />
+        <div class="about-img-badge">
+          <div class="about-img-badge-num">5★</div>
+          <div class="about-img-badge-text">Google Rated</div>
+        </div>
+      </div>
+
+      <div class="about-content reveal-right">
+        <span class="section-tag">Our Story</span>
+        <h2 class="section-title" id="aboutTitle">
+          Crafting Dreams into
+          <span>Timeless Beauty</span>
+        </h2>
+        <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.8;margin-bottom:16px;">
+          At Smile Beauty Salon, nestled in the heart of Thiruchendur, we believe every bride deserves to feel like a goddess on her most special day. Our team of expert artists brings years of mastery and a deep passion for beauty to every look we create.
+        </p>
+        <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.8;">
+          From traditional South Indian bridal looks to modern airbrush artistry, we craft beauty experiences tailored exclusively to you — because you deserve nothing less than perfection.
+        </p>
+
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-icon"><i class="ph-light ph-paint-brush"></i></div>
+            <div>
+              <div class="about-feature-title">Expert Bridal Makeup</div>
+              <div class="about-feature-desc">HD, Airbrush & traditional techniques</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon"><i class="ph-light ph-scissors"></i></div>
+            <div>
+              <div class="about-feature-title">Premium Hair Styling</div>
+              <div class="about-feature-desc">Modern & traditional bridal hairstyles</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon"><i class="ph-light ph-flower-lotus"></i></div>
+            <div>
+              <div class="about-feature-title">Personalized Care</div>
+              <div class="about-feature-desc">Skin type analysis & custom beauty plans</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon"><i class="ph-light ph-dress"></i></div>
+            <div>
+              <div class="about-feature-title">Designer Stitching</div>
+              <div class="about-feature-desc">Blouses, Maxi Gowns & bridal outfits</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-cta">
+          <a href="#appointment" class="btn btn-gold">Book a Consultation</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     STATS SECTION
+═══════════════════════════════════════════════════════ -->
+<section id="stats" aria-label="Our achievements">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal">
+        <span class="stat-icon"><i class="ph-light ph-heart"></i></span>
+        <span class="stat-num" data-target="500" data-suffix="+">0</span>
+        <span class="stat-label">Happy Clients</span>
+      </div>
+      <div class="stat-card reveal" style="transition-delay:0.1s">
+        <span class="stat-icon"><i class="ph-light ph-crown"></i></span>
+        <span class="stat-num" data-target="100" data-suffix="+">0</span>
+        <span class="stat-label">Bridal Makeovers</span>
+      </div>
+      <div class="stat-card reveal" style="transition-delay:0.2s">
+        <span class="stat-icon"><i class="ph-light ph-star"></i></span>
+        <span class="stat-num" data-target="5.0" data-suffix="" data-decimal="1">0</span>
+        <span class="stat-label">Google Rating</span>
+      </div>
+      <div class="stat-card reveal" style="transition-delay:0.3s">
+        <span class="stat-icon"><i class="ph-light ph-check-circle"></i></span>
+        <span class="stat-num" data-target="100" data-suffix="%">0</span>
+        <span class="stat-label">Client Satisfaction</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SERVICES SECTION
+═══════════════════════════════════════════════════════ -->
+<section id="services" aria-labelledby="servicesTitle">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">What We Offer</span>
+      <h2 class="section-title" id="servicesTitle">Our <span>Premium</span> Services</h2>
+      <p class="section-subtitle">Each service is delivered with luxury-grade products and expert precision, tailored to your unique beauty.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="services-grid" style="margin-top:56px;">
+      <div class="service-card reveal" style="transition-delay:0.05s">
+        <div class="service-icon"><i class="ph-light ph-gem"></i></div>
+        <div class="service-name">Bridal Makeup</div>
+        <p class="service-desc">Breathtaking bridal looks that capture your beauty and radiance for your wedding day. Traditional & modern styles.</p>
+        <span class="service-arrow">Explore → </span>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.1s">
+        <div class="service-icon"><i class="ph-light ph-shooting-star"></i></div>
+        <div class="service-name">Reception Makeup</div>
+        <p class="service-desc">Glamorous reception looks with flawless finish, long-lasting hold and a stunning after-dark glow.</p>
+        <span class="service-arrow">Explore → </span>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.15s">
+        <div class="service-icon"><i class="ph-light ph-diamond"></i></div>
+        <div class="service-name">Engagement Makeup</div>
+        <p class="service-desc">Delicate, romantic engagement looks crafted to photograph beautifully from every angle.</p>
+        <span class="service-arrow">Explore → </span>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.2s">
+        <div class="service-icon"><i class="ph-light ph-sparkle"></i></div>
+        <div class="service-name">HD & Airbrush Makeup</div>
+        <p class="service-desc">Ultra-smooth, camera-ready finish using professional HD and airbrush application techniques.</p>
+        <span class="service-arrow">Explore → </span>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.25s">
+        <div class="service-icon"><i class="ph-light ph-scissors"></i></div>
+        <div class="service-name">Hair Styling & Spa</div>
+        <p class="service-desc">Luxurious updos, braids, and hair spa treatments that leave your hair silky, healthy, and radiant.</p>
+        <span class="service-arrow">Explore → </span>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.3s">
+        <div class="service-icon"><i class="ph-light ph-leaf"></i></div>
+        <div class="service-name">Facials & Skin Care</div>
+        <p class="service-desc">Advanced facial treatments and skin care rituals using premium products for a luminous, healthy glow.</p>
+        <span class="service-arrow">Explore → </span>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.35s">
+        <div class="service-icon"><i class="ph-light ph-drop"></i></div>
+        <div class="service-name">Skin Treatments</div>
+        <p class="service-desc">Targeted skin treatments for de-tan, brightening, anti-aging, and deep nourishment to enhance your natural glow.</p>
+        <span class="service-arrow">Explore → </span>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.4s">
+        <div class="service-icon"><i class="ph-light ph-needle"></i></div>
+        <div class="service-name">Designer Blouse Stitching</div>
+        <p class="service-desc">Exquisite custom blouse designs – from traditional to contemporary, stitched to perfection for a flawless fit.</p>
+        <span class="service-arrow">Explore → </span>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.45s">
+        <div class="service-icon"><i class="ph-light ph-dress"></i></div>
+        <div class="service-name">Maxi Gowns</div>
+        <p class="service-desc">Elegant custom maxi gowns for brides, bridesmaids, and special occasions – designed to make you unforgettable.</p>
+        <span class="service-arrow">Explore → </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     BRIDAL PACKAGES SECTION
+═══════════════════════════════════════════════════════ -->
+<section id="packages" aria-labelledby="packagesTitle">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">Bridal Packages</span>
+      <h2 class="section-title" id="packagesTitle">Choose Your <span>Perfect</span> Package</h2>
+      <p class="section-subtitle">Curated bridal beauty packages designed to make your wedding day absolutely magical and unforgettable.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="packages-grid" style="margin-top:56px;">
+      <!-- Silver -->
+      <div class="pkg-card pkg-silver reveal reveal-left">
+        <span class="pkg-badge pkg-badge-silver">Silver</span>
+        <span class="pkg-icon"><i class="ph-light ph-heart"></i></span>
+        <div class="pkg-name">Silver Package</div>
+        <div class="pkg-tagline">Classic elegance for your special day</div>
+        <div class="pkg-price">
+          <span class="pkg-price-label">Starting from</span>
+          <span class="pkg-price-val">Contact for Pricing</span>
+        </div>
+        <div class="pkg-features">
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Bridal Makeup (Traditional)
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Basic Hair Styling
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Pre-Bridal Facial (1 Session)
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Engagement Makeup
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Touch-Up Kit
+          </div>
+        </div>
+        <a href="https://wa.me/917418030622?text=Hello%2C%20I'm%20interested%20in%20the%20Silver%20Package." class="btn btn-outline" style="border-color:rgba(200,161,101,0.4);color:var(--gold);width:100%;justify-content:center;" target="_blank">Enquire Now</a>
+      </div>
+
+      <!-- Gold (Featured) -->
+      <div class="pkg-card pkg-gold reveal" style="transition-delay:0.1s;">
+        <span class="pkg-badge pkg-badge-popular"><i class="ph-light ph-sparkle"></i> Most Popular</span>
+        <span class="pkg-icon"><i class="ph-light ph-sparkle"></i></span>
+        <div class="pkg-name">Gold Package</div>
+        <div class="pkg-tagline">The complete luxury bridal experience</div>
+        <div class="pkg-price">
+          <span class="pkg-price-label">Starting from</span>
+          <span class="pkg-price-val">Contact for Pricing</span>
+        </div>
+        <div class="pkg-features">
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            HD / Airbrush Bridal Makeup
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Premium Hair Styling + Spa
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Pre-Bridal Facials (3 Sessions)
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Reception + Engagement Makeup
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Hair Treatments (2 Sessions)
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Designer Blouse Stitching
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Dedicated Bridal Artist
+          </div>
+        </div>
+        <a href="https://wa.me/917418030622?text=Hello%2C%20I'm%20interested%20in%20the%20Gold%20Package." class="btn btn-gold" style="width:100%;justify-content:center;" target="_blank">Book This Package</a>
+      </div>
+
+      <!-- Platinum -->
+      <div class="pkg-card pkg-platinum reveal reveal-right" style="transition-delay:0.2s;">
+        <span class="pkg-badge pkg-badge-platinum">Platinum</span>
+        <span class="pkg-icon"><i class="ph-light ph-heart"></i></span>
+        <div class="pkg-name">Platinum Package</div>
+        <div class="pkg-tagline">Ultimate luxury, every detail perfected</div>
+        <div class="pkg-price">
+          <span class="pkg-price-label">Starting from</span>
+          <span class="pkg-price-val">Contact for Pricing</span>
+        </div>
+        <div class="pkg-features">
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Everything in Gold Package
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Airbrush Makeup – All Functions
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Pre-Bridal Skin Care (6 Sessions)
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Maxi Gown / Designer Outfit
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            At-Home Bridal Service (Optional)
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Priority 24/7 Support
+          </div>
+          <div class="pkg-feature">
+            <span class="pkg-feature-check">✓</span>
+            Complimentary Beauty Consultation
+          </div>
+        </div>
+        <a href="https://wa.me/917418030622?text=Hello%2C%20I'm%20interested%20in%20the%20Platinum%20Package." class="btn btn-outline" style="border-color:rgba(200,161,101,0.4);color:var(--gold);width:100%;justify-content:center;" target="_blank">Enquire Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     GALLERY SECTION
+═══════════════════════════════════════════════════════ -->
+<section id="gallery" aria-labelledby="galleryTitle">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">Our Portfolio</span>
+      <h2 class="section-title" id="galleryTitle">Beauty in Every <span>Frame</span></h2>
+      <p class="section-subtitle">A glimpse into our world of elegance – real brides, real transformations, real magic.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="gallery-tabs">
+      <button class="gallery-tab active" data-filter="all" id="tabAll">All</button>
+      <button class="gallery-tab" data-filter="bridal" id="tabBridal">Bridal</button>
+      <button class="gallery-tab" data-filter="reception" id="tabReception">Reception</button>
+      <button class="gallery-tab" data-filter="hair" id="tabHair">Hair</button>
+      <button class="gallery-tab" data-filter="fashion" id="tabFashion">Fashion</button>
+      <button class="gallery-tab" data-filter="beauty" id="tabBeauty">Beauty</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item tall" data-cat="bridal">
+        <img src="images/g-bridal.png" alt="Traditional South Indian bridal makeup" loading="lazy" />
+        <div class="gallery-zoom">⊕</div>
+        <div class="gallery-item-overlay">
+          <div>
+            <div class="gallery-item-cat">Bridal</div>
+            <div class="gallery-item-label">Traditional Bridal Look</div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="reception">
+        <img src="images/g-reception.png" alt="Indian reception makeup" loading="lazy" />
+        <div class="gallery-zoom">⊕</div>
+        <div class="gallery-item-overlay">
+          <div>
+            <div class="gallery-item-cat">Reception</div>
+            <div class="gallery-item-label">Glamour Reception Makeup</div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="hair">
+        <img src="images/g-hair.png" alt="Bridal hair styling" loading="lazy" />
+        <div class="gallery-zoom">⊕</div>
+        <div class="gallery-item-overlay">
+          <div>
+            <div class="gallery-item-cat">Hair</div>
+            <div class="gallery-item-label">Bridal Updo Styling</div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="fashion">
+        <img src="images/g-fashion.png" alt="Designer fashion styling" loading="lazy" />
+        <div class="gallery-zoom">⊕</div>
+        <div class="gallery-item-overlay">
+          <div>
+            <div class="gallery-item-cat">Fashion</div>
+            <div class="gallery-item-label">Designer Styling</div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item tall" data-cat="beauty">
+        <img src="images/g-beauty.png" alt="Luxury facial treatment" loading="lazy" />
+        <div class="gallery-zoom">⊕</div>
+        <div class="gallery-item-overlay">
+          <div>
+            <div class="gallery-item-cat">Beauty</div>
+            <div class="gallery-item-label">Luxury Facial Treatment</div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="bridal">
+        <img src="images/g-engagement.png" alt="Engagement ceremony makeup" loading="lazy" />
+        <div class="gallery-zoom">⊕</div>
+        <div class="gallery-item-overlay">
+          <div>
+            <div class="gallery-item-cat">Bridal</div>
+            <div class="gallery-item-label">Engagement Glow Look</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close viewer">✕</button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+      <img src="" alt="Gallery image" id="lightboxImg" />
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     WHY CHOOSE US
+═══════════════════════════════════════════════════════ -->
+<section id="why" aria-labelledby="whyTitle">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">Why Choose Us</span>
+      <h2 class="section-title" id="whyTitle">The <span>Smile Difference</span></h2>
+      <p class="section-subtitle">We don't just do makeup – we create experiences that make you feel like the most beautiful version of yourself.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="why-grid" style="margin-top:56px;">
+      <div class="why-card reveal" style="transition-delay:0.05s">
+        <div class="why-icon"><i class="ph-light ph-palette"></i></div>
+        <div class="why-title">Expert Artists</div>
+        <p class="why-desc">Our professionally trained makeup artists and stylists bring years of expertise in bridal beauty to every appointment.</p>
+      </div>
+      <div class="why-card reveal" style="transition-delay:0.1s">
+        <div class="why-icon"><i class="ph-light ph-paint-brush"></i></div>
+        <div class="why-title">Premium Products</div>
+        <p class="why-desc">We use only top-tier, skin-safe beauty products – MAC, Kryolan, NARS – ensuring flawless, long-lasting results.</p>
+      </div>
+      <div class="why-card reveal" style="transition-delay:0.15s">
+        <div class="why-icon"><i class="ph-light ph-crown"></i></div>
+        <div class="why-title">Luxury Experience</div>
+        <p class="why-desc">From consultation to your final look, every touchpoint is elevated to give you the royal treatment you deserve.</p>
+      </div>
+      <div class="why-card reveal" style="transition-delay:0.2s">
+        <div class="why-icon"><i class="ph-light ph-target"></i></div>
+        <div class="why-title">Customized Plans</div>
+        <p class="why-desc">We tailor every look to your skin type, face shape, and personal style – no cookie-cutter approaches here.</p>
+      </div>
+      <div class="why-card reveal" style="transition-delay:0.25s">
+        <div class="why-icon"><i class="ph-light ph-wallet"></i></div>
+        <div class="why-title">Affordable Packages</div>
+        <p class="why-desc">Luxury doesn't have to break the bank. Our competitive pricing ensures premium beauty is accessible to everyone.</p>
+      </div>
+      <div class="why-card reveal" style="transition-delay:0.3s">
+        <div class="why-icon"><i class="ph-light ph-star"></i></div>
+        <div class="why-title">5★ Trusted Service</div>
+        <p class="why-desc">With a perfect 5.0 Google rating and 500+ happy clients, we're Thiruchendur's most trusted beauty destination.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════════════════ -->
+<section id="testimonials" aria-labelledby="testiTitle">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">Client Love</span>
+      <h2 class="section-title" id="testiTitle">What Our Brides <span>Say</span></h2>
+      <p class="section-subtitle">Real stories from real brides who trusted us with their most important day.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="testimonials-track-wrap" style="margin-top:56px;">
+      <div class="testimonials-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">Best beauty salon I have ever visited! The bridal makeup they did for my wedding was absolutely stunning. Everyone kept complimenting how natural yet flawless I looked. Truly a magical experience!</div>
+          <div class="testi-author">
+            <div class="testi-avatar">P</div>
+            <div>
+              <div class="testi-name">Priya Devi</div>
+              <div class="testi-role">Bride · Thiruchendur</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">Excellent service from beginning to end. The team is incredibly professional and made me feel so comfortable. The HD makeup stayed perfect throughout my entire reception. Worth every rupee!</div>
+          <div class="testi-author">
+            <div class="testi-avatar">M</div>
+            <div>
+              <div class="testi-name">Meenakshi S</div>
+              <div class="testi-role">Bride · Tuticorin</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">Great value for money. I got the Gold Package and it was completely worth it. The facials left my skin glowing for weeks, and my bridal look was beyond my imagination. Highly recommend!</div>
+          <div class="testi-author">
+            <div class="testi-avatar">S</div>
+            <div>
+              <div class="testi-name">Saranya K</div>
+              <div class="testi-role">Bride · Kovilpatti</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">The airbrush makeup was a game changer! It looked flawless in all my wedding photos. The designer blouse stitching was also perfect – fitted beautifully. Smile Beauty is a gem in Thiruchendur!</div>
+          <div class="testi-author">
+            <div class="testi-avatar">L</div>
+            <div>
+              <div class="testi-name">Lakshmi R</div>
+              <div class="testi-role">Bride · Nagercoil</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-quote">I was nervous about my engagement makeup but the team made me feel so relaxed. The result was breathtaking – my fiancé couldn't stop complimenting me. I'm already booking for my wedding!</div>
+          <div class="testi-author">
+            <div class="testi-avatar">A</div>
+            <div>
+              <div class="testi-name">Anitha J</div>
+              <div class="testi-role">Bride-to-be · Madurai</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials-nav">
+      <button class="testi-btn" id="testiPrev" aria-label="Previous reviews">‹</button>
+      <button class="testi-btn" id="testiNext" aria-label="Next reviews">›</button>
+    </div>
+    <div class="testi-dots" id="testiDots" aria-label="Review pages"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     APPOINTMENT SECTION
+═══════════════════════════════════════════════════════ -->
+<section id="appointment" aria-labelledby="apptTitle">
+  <div class="container">
+    <div class="appt-grid">
+      <div class="reveal-left">
+        <span class="section-tag">Book Now</span>
+        <h2 class="section-title" id="apptTitle">Reserve Your <span>Bridal Experience</span></h2>
+        <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.8;margin-bottom:8px;">
+          Ready to begin your beauty journey? Fill in the form and our team will confirm your appointment within 24 hours.
+        </p>
+        <div class="appt-info-points">
+          <div class="appt-point">
+            <div class="appt-point-icon"><i class="ph-light ph-calendar"></i></div>
+            <div>
+              <div class="appt-point-title">Flexible Scheduling</div>
+              <div class="appt-point-desc">Choose any date that works for you – we accommodate your timeline.</div>
+            </div>
+          </div>
+          <div class="appt-point">
+            <div class="appt-point-icon"><i class="ph-light ph-gift"></i></div>
+            <div>
+              <div class="appt-point-title">Free Consultation</div>
+              <div class="appt-point-desc">Every booking includes a complimentary beauty consultation.</div>
+            </div>
+          </div>
+          <div class="appt-point">
+            <div class="appt-point-icon"><i class="ph-light ph-phone"></i></div>
+            <div>
+              <div class="appt-point-title">Quick Response</div>
+              <div class="appt-point-desc">We respond within 2 hours during business hours.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <div class="booking-form">
+          <div class="form-title">Book Appointment</div>
+          <div class="form-subtitle">Complete the form below and we'll reach out to confirm.</div>
+
+          <div id="formSuccess" class="form-success">
+            <div class="form-success-icon"><i class="ph-light ph-sparkle"></i></div>
+            <div class="form-success-title">Appointment Request Sent!</div>
+            <p class="form-success-text">Thank you! We'll contact you within 2 hours to confirm your booking. We can't wait to make you look stunning!</p>
+          </div>
+
+          <form id="bookingForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="fname">Full Name *</label>
+                <input class="form-input" id="fname" type="text" placeholder="Your full name" autocomplete="name" />
+                <span class="form-error" id="fnameErr">Please enter your name.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="fphone">Phone Number *</label>
+                <input class="form-input" id="fphone" type="tel" placeholder="+91 XXXXX XXXXX" autocomplete="tel" />
+                <span class="form-error" id="fphoneErr">Please enter a valid phone number.</span>
+              </div>
+              <div class="form-group full">
+                <label class="form-label" for="fservice">Service Required *</label>
+                <select class="form-select" id="fservice">
+                  <option value="">Select a service...</option>
+                  <option value="bridal">Bridal Makeup</option>
+                  <option value="reception">Reception Makeup</option>
+                  <option value="engagement">Engagement Makeup</option>
+                  <option value="hd">HD Makeup</option>
+                  <option value="airbrush">Airbrush Makeup</option>
+                  <option value="hair">Hair Styling</option>
+                  <option value="spa">Hair Spa</option>
+                  <option value="facial">Facial / Skin Care</option>
+                  <option value="blouse">Designer Blouse Stitching</option>
+                  <option value="gown">Maxi Gown</option>
+                  <option value="package">Bridal Package</option>
+                </select>
+                <span class="form-error" id="fserviceErr">Please select a service.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="fdate">Preferred Date *</label>
+                <input class="form-input" id="fdate" type="date" />
+                <span class="form-error" id="fdateErr">Please select a date.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="ftime">Preferred Time</label>
+                <input class="form-input" id="ftime" type="time" />
+              </div>
+              <div class="form-group full">
+                <label class="form-label" for="fmessage">Additional Message</label>
+                <textarea class="form-textarea" id="fmessage" placeholder="Tell us more about your requirements, event details, or any special requests..."></textarea>
+              </div>
+              <div class="form-group full">
+                <button type="submit" class="btn btn-gold form-submit" id="formSubmitBtn">
+                  <span><i class="ph-light ph-sparkle"></i></span> Confirm Appointment
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     CONTACT / LOCATION
+═══════════════════════════════════════════════════════ -->
+<section id="contact" aria-labelledby="contactTitle">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">Find Us</span>
+      <h2 class="section-title" id="contactTitle">Visit Our <span>Studio</span></h2>
+      <p class="section-subtitle">Come and experience the luxury of Smile Beauty Salon in person. We'd love to welcome you.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="contact-grid" style="margin-top:56px;">
+      <div class="contact-card reveal-left">
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--white);margin-bottom:4px;">Smile Beauty Salon</h3>
+        <p style="font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.4);">Luxury Bridal Studio</p>
+        <div class="contact-info-items">
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="ph-light ph-map-pin"></i></div>
+            <div>
+              <div class="contact-item-label">Address</div>
+              <div class="contact-item-val">Thiruchendur, Tamil Nadu – 628215</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="ph-light ph-phone"></i></div>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-val">+91 74180 30622</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="ph-light ph-star"></i></div>
+            <div>
+              <div class="contact-item-label">Google Rating</div>
+              <div class="contact-item-val">5.0 ★★★★★</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="ph-light ph-clock"></i></div>
+            <div>
+              <div class="contact-item-label">Hours</div>
+              <div class="contact-item-val">Open Daily · 8:00 AM – 8:00 PM</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-btns">
+          <a href="tel:+917418030622" class="btn btn-gold" id="callBtn">
+            <i class="ph-light ph-phone"></i> Call Now
+          </a>
+          <a href="https://wa.me/917418030622?text=Hello%20Smile%20Beauty%20Salon!" class="btn btn-whatsapp" id="waContactBtn" target="_blank" rel="noopener">
+            <i class="ph-light ph-whatsapp-logo"></i> WhatsApp
+          </a>
+          <a href="https://maps.google.com/?q=Smile+Beauty+Salon+Thiruchendur+Tamil+Nadu" class="btn btn-outline" id="dirBtn" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,0.25);">
+            <i class="ph-light ph-map-trifold"></i> Get Directions
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-map-wrap reveal-right">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31741.827263905!2d78.11!3d8.49!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04f4b2d9b7bfd9%3A0x1!2sThiruchendur%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Smile Beauty Salon location map"
+          aria-label="Google map showing Thiruchendur location">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     INSTAGRAM / SOCIAL FEED
+═══════════════════════════════════════════════════════ -->
+<section id="instagram" aria-label="Social media feed">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">Follow Our Journey</span>
+      <h2 class="section-title">Beauty Stories on <span>Instagram</span></h2>
+      <p class="section-subtitle">Catch our latest work, behind-the-scenes moments, and beauty inspiration. Follow us for daily updates!</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="insta-grid">
+      <div class="insta-item"><img src="images/g-bridal.png" alt="Bridal look 1" loading="lazy"><div class="insta-overlay"><i class="ph-light ph-instagram-logo"></i></div></div>
+      <div class="insta-item"><img src="images/g-reception.png" alt="Reception makeup" loading="lazy"><div class="insta-overlay"><i class="ph-light ph-instagram-logo"></i></div></div>
+      <div class="insta-item"><img src="images/g-hair.png" alt="Hair styling" loading="lazy"><div class="insta-overlay"><i class="ph-light ph-instagram-logo"></i></div></div>
+      <div class="insta-item"><img src="images/g-fashion.png" alt="Fashion styling" loading="lazy"><div class="insta-overlay"><i class="ph-light ph-instagram-logo"></i></div></div>
+      <div class="insta-item"><img src="images/g-beauty.png" alt="Beauty treatment" loading="lazy"><div class="insta-overlay"><i class="ph-light ph-instagram-logo"></i></div></div>
+      <div class="insta-item"><img src="images/g-engagement.png" alt="Engagement makeup" loading="lazy"><div class="insta-overlay"><i class="ph-light ph-instagram-logo"></i></div></div>
+    </div>
+
+    <div class="insta-handle">
+      <p class="insta-handle-text">Follow us <span>@smilebeautysalon</span> for daily beauty inspiration</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FAQ SECTION
+═══════════════════════════════════════════════════════ -->
+<section id="faq" aria-labelledby="faqTitle">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">FAQ</span>
+      <h2 class="section-title" id="faqTitle">Frequently Asked <span>Questions</span></h2>
+      <p class="section-subtitle">Have questions? We've got answers. Here are the most common things our clients ask us.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="faq-wrap" style="margin-top:56px;">
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">How far in advance should I book bridal makeup?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">We recommend booking your bridal makeup at least 2–3 months in advance, especially during wedding season (October–February). This ensures availability and allows time for pre-bridal sessions and trials.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Do you offer a makeup trial before the wedding day?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">Yes! We strongly recommend a bridal trial session 1–2 weeks before your wedding. This helps you visualize your look, make any changes, and ensures your big day makeup is perfect. Trials are included in our Gold and Platinum packages.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">What type of makeup products do you use?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">We use only premium, internationally acclaimed brands like MAC, Kryolan, NARS, and Huda Beauty. All our products are skin-tested, long-wearing, and photography-friendly to ensure you look flawless in every photo.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Do you provide at-home bridal services?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">Yes! At-home bridal services are available in and around Thiruchendur. This is included in our Platinum Package, or can be arranged as an add-on for other packages. Please contact us for availability and pricing.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">How long does the bridal makeup process take?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">A full bridal look (makeup + hair) typically takes 3–4 hours. We recommend starting early on your wedding day to allow for a relaxed, stress-free experience. Please plan accordingly when scheduling.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">What are your consultation and booking procedures?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">Simply fill out our booking form, WhatsApp us, or call us directly. We'll schedule a free consultation to understand your needs, preferences, and occasion. A small advance deposit is required to confirm your booking date.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════ -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="images/logo.png" alt="Smile Beauty Salon" class="footer-logo-img" />
+        <p class="footer-desc">Thiruchendur's most trusted luxury beauty salon, dedicated to making every woman feel like royalty on her most special day.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Instagram"><i class="ph-light ph-instagram-logo"></i></a>
+          <a href="https://wa.me/917418030622" class="footer-social" aria-label="WhatsApp" target="_blank"><i class="ph-light ph-whatsapp-logo"></i></a>
+          <a href="tel:+917418030622" class="footer-social" aria-label="Phone"><i class="ph-light ph-phone"></i></a>
+          <a href="#" class="footer-social" aria-label="Facebook"><i class="ph-light ph-facebook-logo"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#hero">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#packages">Packages</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Our Services</div>
+        <nav class="footer-links" aria-label="Services navigation">
+          <a href="#services">Bridal Makeup</a>
+          <a href="#services">HD Makeup</a>
+          <a href="#services">Airbrush Makeup</a>
+          <a href="#services">Hair Styling</a>
+          <a href="#services">Facials & Skin Care</a>
+          <a href="#services">Designer Stitching</a>
+        </nav>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Contact Us</div>
+        <div class="footer-links" style="gap:14px;">
+          <span style="color:rgba(255,255,255,0.45);font-size:0.875rem;"><i class="ph-light ph-map-pin"></i> Thiruchendur, Tamil Nadu – 628215</span>
+          <a href="tel:+917418030622" style="color:rgba(255,255,255,0.45);"><i class="ph-light ph-phone"></i> +91 74180 30622</a>
+          <a href="https://wa.me/917418030622" style="color:rgba(255,255,255,0.45);" target="_blank"><i class="ph-light ph-whatsapp-logo"></i> WhatsApp Us</a>
+          <span style="color:rgba(255,255,255,0.45);font-size:0.875rem;"><i class="ph-light ph-clock"></i> Open Daily · 8AM – 8PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 <span>Smile Beauty Salon</span>. All Rights Reserved. Crafted with ♥ in Thiruchendur.</div>
+      <div class="footer-rating">
+        <span class="footer-stars">★★★★★</span>
+        <span>Rated 5.0 on Google</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/917418030622?text=Hello%20Smile%20Beauty%20Salon%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." class="float-wa" id="floatWa" target="_blank" rel="noopener" aria-label="WhatsApp Chat"><i class="ph-light ph-whatsapp-logo"></i></a>
+
+<!-- Back to Top -->
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
