@@ -1720,25 +1720,44 @@ button, input, select, textarea { font-family: inherit; }
 #backToTop:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(200,161,101,0.5); }
 
 /* ============================================================
-   FLOATING WHATSAPP
+   FLOATING BUTTONS (WhatsApp & Call)
    ============================================================ */
-.float-wa {
+.floating-btns-wrap {
   position: fixed;
   bottom: 96px;
   right: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 999;
+}
+.float-btn {
   width: 52px; height: 52px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #25D366, #128C7E);
   color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  box-shadow: 0 8px 28px rgba(37,211,102,0.4);
-  z-index: 999;
   transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
 }
-.float-wa:hover { transform: translateY(-4px) scale(1.05); box-shadow: 0 16px 40px rgba(37,211,102,0.5); }
+.float-btn:hover { transform: translateY(-4px) scale(1.05); }
+
+.float-wa {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  box-shadow: 0 8px 28px rgba(37,211,102,0.4);
+}
+.float-wa:hover { box-shadow: 0 16px 40px rgba(37,211,102,0.5); }
+
+.float-call {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  box-shadow: 0 8px 28px rgba(200,161,101,0.4);
+}
+.float-call:hover { box-shadow: 0 16px 40px rgba(200,161,101,0.5); }
+
+/* Hide mobile action bar on desktop */
+.mobile-action-bar { display: none; }
 
 /* ============================================================
    KEYFRAMES
@@ -1928,11 +1947,44 @@ button, input, select, textarea { font-family: inherit; }
   .lightbox img { max-width: 95vw; }
 
   /* Floating buttons */
-  #backToTop { bottom: 20px; right: 20px; width: 42px; height: 42px; }
-  .float-wa { bottom: 72px; right: 20px; width: 46px; height: 46px; font-size: 1.3rem; }
+  #backToTop { bottom: 84px; right: 20px; width: 42px; height: 42px; }
+  .floating-btns-wrap { display: none; /* Hide floating circles on mobile */ }
+  
+  /* Mobile Sticky Action Bar */
+  .mobile-action-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 9999;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.4);
+  }
+  .mob-action-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 18px 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--white);
+    text-decoration: none;
+  }
+  .mob-call {
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  }
+  .mob-wa {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+  }
+  .mob-action-btn i { font-size: 1.3rem; }
+  
+  /* Push footer up so it's not hidden by bar */
+  #footer { padding-bottom: 70px; } 
 
   /* Intro skip */
-  .intro-skip { bottom: 24px; right: 20px; font-size: 0.72rem; padding: 8px 16px; }
+  .intro-skip { bottom: 84px; right: 20px; font-size: 0.72rem; padding: 8px 16px; }
 }
 
 /* ── Small Mobile (≤ 480px) ─────────────────────────────── */
