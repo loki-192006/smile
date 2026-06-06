@@ -27,12 +27,19 @@
 
 /* ── Reset ──────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  overflow-x: hidden;
+  max-width: 100%;
+}
 body {
   font-family: 'Poppins', sans-serif;
   background: var(--ivory);
   color: var(--dark);
   overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
   line-height: 1.7;
 }
 
@@ -460,10 +467,14 @@ button, input, select, textarea { font-family: inherit; }
   display: flex;
   flex-direction: column;
   gap: 8px;
-  transition: right 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: right 0.4s cubic-bezier(0.25,0.46,0.45,0.94), visibility 0.4s;
   border-left: 1px solid var(--border);
+  visibility: hidden;
 }
-.mobile-nav.open { right: 0; }
+.mobile-nav.open {
+  right: 0;
+  visibility: visible;
+}
 .mobile-nav a {
   font-size: 1.1rem;
   font-weight: 500;
@@ -900,6 +911,7 @@ button, input, select, textarea { font-family: inherit; }
   padding: 110px 0;
   background: var(--white);
   position: relative;
+  overflow: hidden;
 }
 .packages-grid {
   display: grid;
@@ -1331,6 +1343,7 @@ button, input, select, textarea { font-family: inherit; }
   padding: 110px 0;
   background: var(--beige);
   position: relative;
+  overflow: hidden;
 }
 .appt-grid {
   display: grid;
@@ -1436,6 +1449,7 @@ button, input, select, textarea { font-family: inherit; }
 #contact {
   padding: 110px 0;
   background: var(--dark3);
+  overflow: hidden;
 }
 #contact .section-title { color: var(--white); }
 #contact .section-subtitle { color: rgba(255,255,255,0.5); }
